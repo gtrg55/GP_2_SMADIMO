@@ -45,15 +45,7 @@ pip install selenium webdriver-manager loguru pandas matplotlib python-dateutil
 ## 🏗️ Структура проекта
 
 ```
-steam-market-parser/
-│
-├── steam_market_parser.py     # Основной скрипт
-├── steam_parser.log           # Лог-файл
-├── ParserFiles/               # Директория с результатами
-│   ├── [item_name]_price_history.png   # График истории цен
-│   ├── [item_name]_price_data.csv      # Детальные данные
-│   └── steam_market_prices.csv         # Унифицированные данные
-└── steam_page_screenshot.png  # Скриншот страницы для отладки
+TO BE DONE
 ```
 
 ## 📝 Особенности реализации
