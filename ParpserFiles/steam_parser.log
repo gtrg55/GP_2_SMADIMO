@@ -1,0 +1,59 @@
+2025-03-01 20:22:02 | INFO | Запуск парсера рынка Steam с использованием Selenium. Логи сохраняются в: /Users/nikita/Downloads/steam_parser.log
+2025-03-01 20:22:06 | INFO | Использование URL по умолчанию: https://steamcommunity.com/market/listings/730/Chroma%203%20Case
+2025-03-01 20:22:06 | INFO | Начало парсинга данных с: https://steamcommunity.com/market/listings/730/Chroma%203%20Case
+2025-03-01 20:22:06 | INFO | Настройка Selenium Chrome WebDriver
+2025-03-01 20:22:08 | INFO | WebDriver успешно инициализирован с помощью webdriver_manager
+2025-03-01 20:22:08 | SUCCESS | Настройка Selenium WebDriver завершена
+2025-03-01 20:22:08 | INFO | Загрузка страницы Steam Market
+2025-03-01 20:22:12 | INFO | Ожидание загрузки содержимого страницы
+2025-03-01 20:22:12 | INFO | Сохранен скриншот страницы: /Users/nikita/Downloads/steam_page_screenshot.png
+2025-03-01 20:22:12 | INFO | Обнаружено название предмета: 
+2025-03-01 20:22:12 | WARNING | Название предмета пустое, используем значение по умолчанию: Chroma 3 Case
+2025-03-01 20:22:12 | INFO | Извлечение данных истории цен через JavaScript
+2025-03-01 20:22:12 | WARNING | Ошибка при доступе к переменной line1: Message: javascript error: line1 is not defined
+  (Session info: chrome=133.0.6943.142)
+Stacktrace:
+0   chromedriver                        0x0000000100cd82d4 cxxbridge1$str$ptr + 2739836
+1   chromedriver                        0x0000000100cd0934 cxxbridge1$str$ptr + 2708700
+2   chromedriver                        0x0000000100831f90 cxxbridge1$string$len + 93360
+3   chromedriver                        0x0000000100837c9c cxxbridge1$string$len + 117180
+4   chromedriver                        0x0000000100839ff8 cxxbridge1$string$len + 126232
+5   chromedriver                        0x00000001008bac60 cxxbridge1$string$len + 653696
+6   chromedriver                        0x00000001008b9e80 cxxbridge1$string$len + 650144
+7   chromedriver                        0x000000010086d060 cxxbridge1$string$len + 335232
+8   chromedriver                        0x0000000100ca0c38 cxxbridge1$str$ptr + 2512864
+9   chromedriver                        0x0000000100ca3f58 cxxbridge1$str$ptr + 2525952
+10  chromedriver                        0x0000000100c86578 cxxbridge1$str$ptr + 2404640
+11  chromedriver                        0x0000000100ca4818 cxxbridge1$str$ptr + 2528192
+12  chromedriver                        0x0000000100c76f2c cxxbridge1$str$ptr + 2341588
+13  chromedriver                        0x0000000100cc0a60 cxxbridge1$str$ptr + 2643464
+14  chromedriver                        0x0000000100cc0be8 cxxbridge1$str$ptr + 2643856
+15  chromedriver                        0x0000000100cd05a8 cxxbridge1$str$ptr + 2707792
+16  libsystem_pthread.dylib             0x000000019feac2e4 _pthread_start + 136
+17  libsystem_pthread.dylib             0x000000019fea70fc thread_start + 8
+
+2025-03-01 20:22:12 | INFO | Поиск данных истории цен в скрипте
+2025-03-01 20:22:12 | INFO | Найден скрипт с данными истории цен
+2025-03-01 20:22:12 | INFO | Успешно извлечены данные истории цен (3872 точек)
+2025-03-01 20:22:12 | INFO | Пример данных (первые 3 точки): [['Apr 28 2016 01: +0', 8.368, '54074'], ['Apr 29 2016 01: +0', 5.374, '58197'], ['Apr 30 2016 01: +0', 3.836, '63985']]
+2025-03-01 20:22:12 | INFO | Итоговое название предмета для анализа: Chroma 3 Case
+2025-03-01 20:22:12 | INFO | Закрытие Selenium WebDriver
+2025-03-01 20:22:12 | INFO | Анализ 3872 точек данных о ценах
+2025-03-01 20:22:12 | INFO | Первые 5 точек данных: [['Apr 28 2016 01: +0', 8.368, '54074'], ['Apr 29 2016 01: +0', 5.374, '58197'], ['Apr 30 2016 01: +0', 3.836, '63985'], ['May 01 2016 01: +0', 3.066, '62250'], ['May 02 2016 01: +0', 2.829, '50742']]
+2025-03-01 20:22:12 | INFO | Преобразование 3872 временных меток в объекты datetime
+2025-03-01 20:22:12 | INFO | Фильтрация данных с 2022-03-02 20:22:12.748472 по настоящее время
+2025-03-01 20:22:12 | INFO | Отфильтровано 1737 точек данных
+2025-03-01 20:22:12 | SUCCESS | Анализ данных завершен
+2025-03-01 20:22:12 | INFO | Построение графика данных о ценах
+2025-03-01 20:22:13 | INFO | График сохранен как /Users/nikita/Downloads/Chroma_3_Case_price_history.png
+2025-03-01 20:22:16 | INFO | 
+Период данных: с 2022-03-03 по 2025-03-01
+Всего точек данных: 1737
+Средний промежуток между точками: 907.98 минут
+Минимальный промежуток: 60.00 минут
+Максимальный промежуток: 1440.00 минут
+2025-03-01 20:22:16 | INFO | Экспорт данных в CSV
+2025-03-01 20:22:16 | SUCCESS | Подробные данные экспортированы в /Users/nikita/Downloads/Chroma_3_Case_price_data.csv
+2025-03-01 20:22:16 | INFO | Используем короткое имя инструмента: 'Chroma 3 Case'
+2025-03-01 20:22:16 | SUCCESS | Единый датафрейм экспортирован в /Users/nikita/Downloads/steam_market_prices.csv
+2025-03-01 20:22:16 | INFO | Выполнение парсера завершено
